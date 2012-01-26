@@ -1,4 +1,4 @@
 RebelFoundation::Application.routes.draw do
-  # root to: 'responses#respond'
-  match '(*r(.:format))' => 'responses#respond'
+  match 'r(.:format)' => 'responses#respond'
+  root to: 'responses#respond'
 end
