@@ -1,4 +1,9 @@
+= image_tag 'all-the-responses.png'
+
 - params.each do |key,value|
   %p
+    = '{'
     %span= key
+    = ':'
     %span= value
+    = '}'
